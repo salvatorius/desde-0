@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Desde 0 HTML/CSS</title>
+    <link rel="icon" href="favicon.svg">
+    <style>
+      body {
+        margin: auto;
+        padding: 10px;
+        max-width: 800px;
+        font-family: Verdana, Geneva, Tahoma;
+      }
+      p {
+        font-size: large;
+        margin-top: 20px;
+      }
+      pre {
+        background-color:darkslategray;
+        color: beige;
+        max-width: 600px;
+      }
+      a {
+        text-decoration: none;
+        color: darkgreen;
+      }
+      a:hover {
+        color: maroon;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1><a href="index.html">HTML/CSS Desde 0</a></h1>
+    </div>
+    <div>
+      <h2>HTML y CSS juntos</h2>
+      <p>
+        Podemos incluir los estilos (css) de nuestro HTML dentro del mismo
+        archivo .html
+      </p>
+      <p>
+          Para eso, insertamos un tag <code>&lt;style></code>
+          dentro del primer bloque o conjunto de elementos
+          que tiene una página web: el <code>&lt;head></code>
+          (en la primera parte del html) de esta forma:
+      </p>
+      <pre>
+        <code>
+    &lt;head>
+      &lt;style>
+        body {
+          margin: auto;
+          padding: 10px;
+          max-width: 800px;
+        }
+        p {
+          font-size: large;
+          margin-top: 20px;
+        }
+      &lt;style>
+    &lt;head>
+        </code>
+      </pre>
+      <p>
+          Luego ponemos todo nuestro html
+          (el que contiene los elementos que queremos mostrar)
+          en el propio "cuerpo" de la página,
+          en el bloque <code>&lt;body></code> así:
+      </p>
+      <pre>
+        <code>
+    &lt;body>
+      &lt;div>
+        &lt;p>Este párrafo está dentro de un
+          contendor &lt;div>, en el cuerpo
+          principal de la página (body)
+        &lt;/p>
+        &lt;img src="images/foto.jpeg">
+      &lt;div>
+    &lt;body>
+        </code>
+      </pre>
+      <p>
+        Todo esto estaría contenido dentro de un mismo archivo 
+        (por ejemplo: <code>index.html</code>) con la ventaja de que,
+        al abrir este archivo .html en un editor de código como 
+        <a href="https://code.visualstudio.com/" target="_blank">vs-code</a>,
+        es posible ir viendo una previsualización de nuestros cambios
+        "en directo" a medida que vamos cambiando tanto el código html
+        como las reglas de CSS
+      </p>
+    </div>
+    <footer>
+      <a href="index.html">&#127968;Inicio</a>
+      <a href="1-terminos-basicos.html">&#9194;Atrás</a>
+      <a href="#">&#128285;Arriba</a>
+      <a href="3-css-externo.html">&#9193;Siquiente</a>
+    </footer>
+  </body>
+</html>

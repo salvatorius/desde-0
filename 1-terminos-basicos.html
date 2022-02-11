@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Desde 0 HTML/CSS</title>
+    <link rel="icon" href="favicon.svg">
+    <style>
+      body {
+        margin: auto;
+        padding: 10px;
+        max-width: 800px;
+        font-family: Verdana, Geneva, Tahoma;
+      }
+      p {
+        font-size: large;
+        margin-top: 20px;
+      }
+      a {
+        text-decoration: none;
+        color: darkgreen;
+      }
+      a:hover {
+        color: maroon;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1><a href="index.html">HTML/CSS Desde 0</a></h1>
+    </div>
+    <div>
+      <h2>Términos Básicos</h2>
+    </div>
+    <h3>HTML</h3>
+    <p>
+      El Lenguaje de Marcado de Hipertexto (en inglés: <em>HyperText Markup Language HTML</em>)
+      es el código que se utiliza para estructurar y desplegar una página web y sus contenidos.
+    </p>
+    <p>
+      A pesar de que su nombre podría confundir, el HTML <strong>NO es</strong> un lenguaje de programación;
+      es un <strong>lenguaje de marcado</strong> que define la estructura de un contenido
+      (típicamente una página de un sitio web),
+      y consiste en una serie de elementos que usamos para encerrar diferentes partes
+      de ese contenido que queremos presentar, para que se vean y dispongan en la página
+      de una manera específica.
+    </p>
+    <h3>Hipertexto</h3>
+    <p>
+      Hace referencia a los enlaces que conectan páginas web entre sí,
+      ya sea dentro de un único sitio web o entre sitios web
+    </p>
+    <h3>Tags y Elementos</h3>
+    <p>
+      Un elemento HTML se distingue de otro texto en un documento mediante "etiquetas" (tags),
+      que consisten en el nombre del <strong>tipo</strong> de elemento rodeado por "&lt;" y "&gt;".
+    </p>
+    <p>
+      Cada tag que agregamos al código html de nuestra página: una imagen, un
+      div, un anchor (link), los párrafos, botones, tablas, etc.. cada uno de
+      esos tags representan un único <strong>elemento</strong> de nuestra
+      página.
+    </p>
+    <p>
+      Una forma rápida de entenderlo mejor, es decir que el tag es eso que
+      empieza con un <code>&lt;</code> y termina con <code>></code>. Mientras
+      que el elemento es todo lo que está contenido dentro del tag (tanto en
+      sus <em>atributos</em>, como todo lo que esté encerrado entre el tag
+      que abre y su cierre)
+    </p>
+    <blockquote>
+      A pesar de que podemos tener (digaamos) unos 500 tags <code>&lt;div></code>
+      en una misma página, cada uno de ellos representa un elemento único 
+      (aún y cuando luzca exactamente igual que los que le rodean)
+      puesto que tiene información (o posición) propia dentro de esa
+      estructura del documento.
+    </blockquote>
+    <h3>Atributos</h3>
+    <p>
+      Algunas veces no basta con sólo escribir un tag para definir en detalle
+      lo que necesitamos representar en un elemento, así que tenemos que agregar
+      información adicional (además del contenido en sí). 
+      Los <strong>atributos</strong> proporcionan información adicional sobre los elementos HTML.
+    </p>
+    <p>
+      Por ejemplo, para crear un enlace (anchor o link) no sólo usamos la etiqueta
+      <code>&lt;a></code> sino que además tenemos que especificar el "atributo" que le indica
+      al navegador hacia qué dirección debe apuntar ese anchor (el atributo <code>href</code>)
+    </p>
+    <p>
+      Otro atributo muy común (y similar al <code>href</code> del anchor) sería el <code>src</code>
+      que agregamos a los tags de imágenes (<code>&lt;img></code>) en este caso para indicar
+      la ubicación de la imagen que queremos mostrar.
+    </p>
+    <h3>DOM</h3>
+    <p>
+      Una página HTML está formada por múltiples etiquetas HTML, anidadas una dentro de otra,
+      formando una especie de árbol de etiquetas relacionadas entre sí. Así que este <em>árbol</em>
+      se puede representar como un modelo de objetos del documento 
+      (que llamamos <strong>DOM</strong> por: <em>Document Object Model</em>) que podríamos "recorrer"
+      mediante secuencias de comandos ("<em>scripts</em>") para poder manipular algunos
+      de sus elementos (o activar acciones que queremos ejecutar en nuestra página).
+    </p>
+    <p>
+      En otras palabras, el DOM es una representación "ordenada" de toda la estructura 
+      de anidamiento de nuestro html (que podríamos graficar tal cual como un árbol)
+    </p>
+    <hr />
+
+    <p>
+      &#9989; Recomendado: <a rel="noopener noreferrer" target="_blank"
+      href="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics">
+      Conceptos Básicos de HTML - mozilla.org</a>
+    </p>
+    <footer>
+      <a href="index.html">&#127968;Inicio</a>
+      <a href="#">&#128285;Arriba</a>
+      <a href="2-html+css.html">&#9193;Siquiente</a>
+    </footer>
+  </body>
+</html>

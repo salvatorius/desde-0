@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Desde 0 HTML/CSS</title>
+    <link rel="icon" href="favicon.svg">
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+    <style>
+      td, th {
+        border: 1px solid slategray;
+        text-align: center;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="encabezado">
+      <h1><a href="index.html">HTML/CSS Desde 0</a></h1>
+    </div>
+    <div id="cuerpo-principal">
+      <h2>Extras sobre elementos usados en esta guía</h2>
+      <h3>Literal</h3>
+      <p>
+        A veces necesitamos representar algo como un tag directamente en nuestra
+        página web (tal como los que están en esta página), por ejemplo, si
+        queremos mostrar un código de ejemplo.
+      </p>
+      <p>
+        Si lo intentamos escribir así directamente en nuestro código html, el
+        intérprete (o browser) intentará ejecutar ese código (en vez de
+        mostrarlo directamente)
+      </p>
+      <p>
+        Como ejercicio, puedes intentar escribir un tag cualquiera en tu editor
+        de código e intentar que se vea así tal cual en el resultado final de la
+        página
+      </p>
+      <p>
+        Una de las formas que tenemos para lograr eso, es reemplazando ciertos
+        caracteres especiales (como el <code>&lt;</code>) por una expresión
+        equivalente que resulta ser una representación "literal" de ese mismo
+        caracter. En el caso del <code>&lt;</code> sería:
+        <code>&amp;lt;</code> el literal que representa el caracter de "menor
+        que" (o, en inglés, "less-than")
+      </p>
+      <p>Algunos otros literales útiles son:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Caracter</th>
+            <th>Literal</th>
+            <th>En inglés</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&amp;</td>
+            <td>&amp;amp;</td>
+            <td>ampersand</td>
+          </tr>
+          <tr>
+            <td>&lt;</td>
+            <td>&amp;lt;</td>
+            <td>less than</td>
+          </tr>
+          <tr>
+            <td>&gt;</td>
+            <td>&amp;gt;</td>
+            <td>greater than</td>
+          </tr>
+          <tr>
+            <td>&quot;</td>
+            <td>&amp;quot;</td>
+            <td>quotes</td>
+          </tr>
+          <tr>
+            <td>&apos;</td>
+            <td>&amp;apos;</td>
+            <td>apostrophe</td>
+          </tr>
+          <tr>
+            <td>&rarr;</td>
+            <td>&amp;rarr;</td>
+            <td>right arrow</td>
+          </tr>
+          <tr>
+            <td>&larr;</td>
+            <td>&amp;larr;</td>
+            <td>left arrow</td>
+          </tr>
+          <tr>
+            <td>&tilde;</td>
+            <td>&amp;tilde;</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>De esta tabla, por ahora, sólo vamos a estar usando los 2 primeros</p>
+      <hr />
+      <h3>Formato especial de Código</h3>
+      <p>
+        Cuando queremos representar un fragmento de código (textual) en nuestra
+        página, hacemos uso del tag <code>&lt;code></code> que los navegadores
+        interpretan (y representan) adecuadamente como código (con un tipo de
+        letra monoespaciada, un fondo o color ligeramente distintos, etc)
+      </p>
+      <p>Si escribimos este código en nuestro editor:</p>
+      <pre>
+        <code>
+    &lt;p>
+      Así representamos una imagen: 
+      &lt;code>&amp;lt;img src="nuevafoto.png"/>&lt;code>
+    &lt;/p>
+        </code>
+      </pre>
+      <p>Veremos algo como esto en el navegador:</p>
+      <blockquote>
+        <p>
+          Así representamos una imagen:
+          <code>&lt;img src="nuevafoto.png"/></code>
+        </p>
+      </blockquote>
+      <cite>
+        Nota: Se puede ver que: para poder representar el tag
+        <code>&lt;img></code> (y que se muestre así tal cual en nuestra página)
+        tuvimos que reemplazar el <code>&lt;</code> por el literal
+        <code>&amp;lt;</code>
+      </cite>
+      <br /><br />
+      <hr />
+
+      <h3>Bloques de "pre" formato</h3>
+      <p>
+        Ya vimos cómo representar código (con un formato monoespaciado) pero
+        también podemos crear un bloque completo de código (tal como ese que
+        usamos arriba para mostrar el ejemplo de cómo usar el &lt;code>)
+      </p>
+      <p>
+        Eso se logra encerrando el contenido en un tipo particular de contenedor
+        &lt;div> (más adelante veremos muchas otras variantes de los
+        contenedores o "divs") En este caso, el tag que usaremos es el
+        <code>&lt;pre></code>, el cual podemos también usar en conjunto con el
+        tag <code>&lt;code></code> para crear un bloque "pre-formateado" de
+        código:
+      </p>
+      <pre>
+        <code>
+    &lt;pre>
+      &lt;code>
+        &amp;lt;p>
+          Este es un bloque completo de código de ejemplo
+          incluyendo tags html
+        &amp;lt;/p>
+        &amp;lt;img src="ejemplo.png"/>
+      &lt;code>
+    &lt;pre>
+        </code>
+      </pre>
+      Será renderizado (y visible en nuestro navegador) así:
+      <blockquote>
+        <pre>
+          <code>
+    &lt;p>
+      Este es un bloque completo de código de ejemplo
+      incluyendo tags html
+    &lt;/p>
+    &lt;img src="ejemplo.png"/>
+          </code>
+        </pre>
+      </blockquote>
+      <cite>
+        Nuevamente recordamos reemplazar el <code>&lt;</code> por el literal
+        <code>&amp;lt;</code> para que se pueda mostrar correctamente el tag con
+        su respectivo
+        <code>&lt;</code>
+      </cite>
+      <br /><br /><br />
+      <hr />
+      <br />
+    </div>
+    <footer>
+      <a href="index.html">&#127968;Inicio</a>
+      <a href="8-estructura.html">&#9194;Atrás</a>
+      <a href="#">&#128285;Arriba</a>
+    </footer>
+  </body>
+</html>
